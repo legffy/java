@@ -144,7 +144,7 @@ public class TicTacToeProtocol {
 								response = "" + command + " not_valid_for_game_state " + this.state.toString();				
 							}
 							break;
-			case FINISHED : response = "" + command + " not_valid_for_game_state " + this.state.toString();
+			case FINISHED : response = "" + command + " not_valid_for_game_state: lock in " + this.state.toString();
 							break;
 			default : break;
 		}
